@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Generated using X-Studio -->
+<language id="44">
+
+	<page id="8103" title="Ship browser" desc="" voice="no">
+		<t id="1">Ship Browser</t>
+		<t id="2">\n</t>
+		<t id="3">\33G%s\33X</t>
+		<t id="4">\33R%s\33X</t>
+		<t id="5">\33B%s\33X</t>
+		<t id="6">\33O%s\33X</t>
+		<t id="7">\33Y%s\33X</t>
+		<t id="8">\33W%s\33X</t>
+		<t id="9">NEW STRING</t>
+		<t id="10">NEW STRING</t>
+		<t id="11">NEW STRING</t>
+		<t id="12">NEW STRING</t>
+		<t id="13">NEW STRING</t>
+		<t id="14">NEW STRING</t>
+		<t id="15">Ship Name</t>
+		<t id="16">Race</t>
+		<t id="17">Purchase Location</t>
+		<t id="18">Can Dock</t>
+		<t id="19">Cost</t>
+		<t id="20">M. Spd</t>
+		<t id="21">M. Cargo</t>
+		<t id="22">B. Cargo</t>
+		<t id="23">TC</t>
+		<t id="24">Shields</t>
+		<t id="25">Dock</t>
+		<t id="26">Main</t>
+		<t id="27">Turret Coverage</t>
+		<t id="28">W.En Cap</t>
+		<t id="29">Shld Gen</t>
+		<t id="30">None</t>
+		<t id="31">Mi</t>
+		<t id="32">%s Match\(es\) Found</t>
+		<t id="33">Any</t>
+		<t id="34">Loading data, please wait...</t>
+		<t id="35">Options</t>
+		<t id="36">Class Selection</t>
+		<t id="37">Missile Criteria</t>
+		<t id="38">Weapon Criteria</t>
+		<t id="39">Can Transport Ware Class</t>
+		<t id="40">Can Dock Ship of Class</t>
+		<t id="41">Sort Results By</t>
+		<t id="42">General</t>
+		<t id="43">Weapons</t>
+		<t id="44">Information Page</t>
+		<t id="45">Max Speed</t>
+		<t id="46">Base Cargo</t>
+		<t id="47">Max Cargo</t>
+		<t id="48">Dock Size</t>
+	</page>
+</language>
