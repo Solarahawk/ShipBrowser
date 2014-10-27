@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated using X-Studio -->
 <project version="1">
-	<document type="script">C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict\addon\scripts\setup.zanzal.shipbrowser.xml</document>
-	<document type="script">C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict\addon\scripts\plugin.zanzal.shipbrowser.menu.xml</document>
-	<document type="script">C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict\addon\scripts\plugin.zanzal.getshipvalue.xml</document>
-	<document type="script">C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict\addon\scripts\lib.zanzal.createmenu.xml</document>
-	<document type="script">C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict\addon\scripts\lib.zanzal.ismenuopen.xml</document>
-	<document type="script">C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict\addon\scripts\lib.zanzal.menu.xml</document>
-	<document type="script">C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict\addon\scripts\lib.zanzal.padstring.xml</document>
-	<document type="language">C:\Program Files (x86)\Steam\steamapps\common\x3 terran conflict\addon\t\8103-L044.xml</document>
+	<document type="script">C:\X3AP\XRM\addon\scripts\setup.zanzal.shipbrowser.xml</document>
+	<document type="script">C:\X3AP\XRM\addon\scripts\plugin.zanzal.shipbrowser.menu.xml</document>
+	<document type="script">C:\X3AP\XRM\addon\scripts\plugin.zanzal.getshipvalue.xml</document>
+	<document type="script">C:\X3AP\XRM\addon\scripts\lib.zanzal.createmenu.xml</document>
+	<document type="script">C:\X3AP\XRM\addon\scripts\lib.zanzal.ismenuopen.xml</document>
+	<document type="script">C:\X3AP\XRM\addon\scripts\lib.zanzal.menu.xml</document>
+	<document type="script">C:\X3AP\XRM\addon\scripts\lib.zanzal.padstring.xml</document>
+	<document type="script">C:\X3AP\XRM\addon\scripts\plugin.zanzal.shipbrowser.simenu.xml</document>
+	<document type="language">C:\X3AP\XRM\addon\t\8103-L044.xml</document>
+	<document type="language">C:\X3AP\XRM\addon\t\8103-L049.xml</document>
 </project>
