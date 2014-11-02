@@ -1176,7 +1176,7 @@
 			<var>226</var>
 		</line>
 		<line linenr="093" indent="">
-			<var>$m5.text</var>
+			<var>$m8.text</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -1188,7 +1188,7 @@
 			<var>$green.text</var>
 			<text>,</text>
 			<text> </text>
-			<var>[M5]</var>
+			<var>[M8]</var>
 			<text>,</text>
 			<text> </text>
 			<var>null</var>
@@ -1203,7 +1203,7 @@
 			<var>null</var>
 		</line>
 		<line linenr="094" indent="" interruptable="@">
-			<var>$m5.text</var>
+			<var>$m8.text</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -1220,7 +1220,7 @@
 			<text> </text>
 			<text>str</text>
 			<text>=</text>
-			<var>$m5.text</var>
+			<var>$m8.text</var>
 			<text> </text>
 			<text>pixels</text>
 			<text>=</text>
@@ -1863,7 +1863,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$m5.text</var>
+			<var>$m8.text</var>
 		</line>
 		<line linenr="157" indent="" />
 		<line linenr="158" indent="">
@@ -10748,7 +10748,7 @@
 				<sval type="string" val="vanilla.small" />
 				<sval type="string" val="vanilla.tiny" />
 				<sval type="string" val="val.sel.width" />
-				<sval type="string" val="m5.text" />
+				<sval type="string" val="m8.text" />
 				<sval type="string" val="player.sector" />
 				<sval type="string" val="param.col.offset" />
 				<sval type="string" val="eq.maintype" />
@@ -11526,7 +11526,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="7" />
 					<sval type="int" val="12" />
-					<sval type="int" val="2025" />
+					<sval type="int" val="2142" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
