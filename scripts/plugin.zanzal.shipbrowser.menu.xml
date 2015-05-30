@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>plugin.zanzal.shipbrowser.menu</name>
-	<version>6</version>
+	<version>13</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments />
@@ -41,22 +41,20 @@
 			<comment>* Version info for Litcube's Universe when present</comment>
 		</line>
 		<line linenr="011" indent="">
-			<var>$LUCurrentVersion</var>
+			<var>$LU.Installed</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<text>read</text>
+			<text>get</text>
 			<text> </text>
-			<text>text</text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
 			<text>:</text>
 			<text> </text>
-			<text>page</text>
+			<text>name</text>
 			<text>=</text>
-			<var>1910</var>
-			<text> </text>
-			<text>id</text>
-			<text>=</text>
-			<var>999</var>
+			<text>'zanzal.lu.version'</text>
 		</line>
 		<line linenr="012" indent="" />
 		<line linenr="013" indent="">
@@ -7207,7 +7205,7 @@
 			<text> </text>
 			<text>not</text>
 			<text> </text>
-			<var>$LUCurrentVersion</var>
+			<var>$LU.Installed</var>
 		</line>
 		<line linenr="713" indent="&#160;&#160;" interruptable="@">
 			<var>$station.list</var>
@@ -10675,11 +10673,11 @@
 			<sval type="string" val="plugin.zanzal.shipbrowser.menu" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
-			<sval type="int" val="6" />
+			<sval type="int" val="13" />
 			<sval type="int" val="0" />
 			<sval type="array" size="249">
 				<sval type="string" val="pageid" />
-				<sval type="string" val="LUCurrentVersion" />
+				<sval type="string" val="LU.Installed" />
 				<sval type="string" val="menu" />
 				<sval type="string" val="last.settings" />
 				<sval type="string" val="spoiler.mode" />
@@ -10938,13 +10936,11 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="126" />
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="zanzal.lu.version" />
 					<sval type="int" val="1" />
-					<sval type="int" val="4" />
-					<sval type="int" val="1910" />
-					<sval type="int" val="4" />
-					<sval type="int" val="999" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="128" />

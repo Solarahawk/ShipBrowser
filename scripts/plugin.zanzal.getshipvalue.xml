@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>plugin.zanzal.getshipvalue</name>
-	<version>2</version>
+	<version>12</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments>
@@ -33,25 +33,24 @@
 			<comment>* Version info for Litcube's Universe when present</comment>
 		</line>
 		<line linenr="009" indent="">
-			<var>$LUCurrentVersion</var>
+			<var>$LU.Installed</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<text>read</text>
+			<text>get</text>
 			<text> </text>
-			<text>text</text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
 			<text>:</text>
 			<text> </text>
-			<text>page</text>
+			<text>name</text>
 			<text>=</text>
-			<var>1910</var>
-			<text> </text>
-			<text>id</text>
-			<text>=</text>
-			<var>999</var>
+			<text>'zanzal.lu.version'</text>
 		</line>
 		<line linenr="010" indent="" />
-		<line linenr="011" indent="">
+		<line linenr="011" indent="" />
+		<line linenr="012" indent="">
 			<var>$ware</var>
 			<text> </text>
 			<text>=</text>
@@ -71,7 +70,7 @@
 			<text> </text>
 			<text>object</text>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="013" indent="">
 			<var>$value</var>
 			<text> </text>
 			<text>=</text>
@@ -88,14 +87,14 @@
 			<text> </text>
 			<var>$ware</var>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="014" indent="">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
-			<var>$LUCurrentVersion</var>
+			<var>$LU.Installed</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<var>$mt.laser</var>
 			<text> </text>
 			<text>=</text>
@@ -110,10 +109,10 @@
 			<text> </text>
 			<var>{Energy Bolt Chaingun}</var>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="016" indent="">
 			<text>else</text>
 		</line>
-		<line linenr="016" indent="&#160;">
+		<line linenr="017" indent="&#160;">
 			<var>$mt.laser</var>
 			<text> </text>
 			<text>=</text>
@@ -128,10 +127,10 @@
 			<text> </text>
 			<var>{Phased Repeater Gun}</var>
 		</line>
-		<line linenr="017" indent="">
+		<line linenr="018" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="019" indent="">
 			<var>$mt.shield</var>
 			<text> </text>
 			<text>=</text>
@@ -146,7 +145,7 @@
 			<text> </text>
 			<var>{1 MJ Shield}</var>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="020" indent="">
 			<var>$mt.equipment</var>
 			<text> </text>
 			<text>=</text>
@@ -161,7 +160,7 @@
 			<text> </text>
 			<var>{Transporter Device}</var>
 		</line>
-		<line linenr="020" indent="">
+		<line linenr="021" indent="">
 			<var>$mt.upgrade</var>
 			<text> </text>
 			<text>=</text>
@@ -176,8 +175,8 @@
 			<text> </text>
 			<var>{Cargo Bay Extension}</var>
 		</line>
-		<line linenr="021" indent="" />
-		<line linenr="022" indent="">
+		<line linenr="022" indent="" />
+		<line linenr="023" indent="">
 			<var>$maintypes</var>
 			<text> </text>
 			<text>=</text>
@@ -191,7 +190,7 @@
 			<text>=</text>
 			<var>4</var>
 		</line>
-		<line linenr="023" indent="">
+		<line linenr="024" indent="">
 			<var>$maintypes</var>
 			<text>[</text>
 			<var>0</var>
@@ -201,7 +200,7 @@
 			<text> </text>
 			<var>$mt.laser</var>
 		</line>
-		<line linenr="024" indent="&#160;">
+		<line linenr="025" indent="&#160;">
 			<var>$maintypes</var>
 			<text>[</text>
 			<var>1</var>
@@ -211,7 +210,7 @@
 			<text> </text>
 			<var>$mt.shield</var>
 		</line>
-		<line linenr="025" indent="&#160;">
+		<line linenr="026" indent="&#160;">
 			<var>$maintypes</var>
 			<text>[</text>
 			<var>2</var>
@@ -221,7 +220,7 @@
 			<text> </text>
 			<var>$mt.equipment</var>
 		</line>
-		<line linenr="026" indent="&#160;">
+		<line linenr="027" indent="&#160;">
 			<var>$maintypes</var>
 			<text>[</text>
 			<var>3</var>
@@ -231,7 +230,7 @@
 			<text> </text>
 			<var>$mt.upgrade</var>
 		</line>
-		<line linenr="027" indent="&#160;&#160;">
+		<line linenr="028" indent="&#160;&#160;">
 			<var>$XS.Iterator1</var>
 			<text> </text>
 			<text>=</text>
@@ -244,17 +243,17 @@
 			<text> </text>
 			<var>$maintypes</var>
 		</line>
-		<line linenr="028" indent="&#160;&#160;">
+		<line linenr="029" indent="&#160;&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="029" indent="&#160;&#160;">
+		<line linenr="030" indent="&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="030" indent="&#160;&#160;&#160;">
+		<line linenr="031" indent="&#160;&#160;&#160;">
 			<var>$mt</var>
 			<text> </text>
 			<text>=</text>
@@ -264,7 +263,7 @@
 			<var>$XS.Iterator1</var>
 			<text>]</text>
 		</line>
-		<line linenr="031" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="032" indent="&#160;&#160;&#160;&#160;">
 			<var>$subtypes</var>
 			<text> </text>
 			<text>=</text>
@@ -283,14 +282,14 @@
 			<text> </text>
 			<var>$mt</var>
 		</line>
-		<line linenr="032" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="033" indent="&#160;&#160;&#160;&#160;">
 			<var>$sub</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="033" indent="&#160;&#160;&#160;">
+		<line linenr="034" indent="&#160;&#160;&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$sub</var>
@@ -299,7 +298,7 @@
 			<text> </text>
 			<var>$subtypes</var>
 		</line>
-		<line linenr="034" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="035" indent="&#160;&#160;&#160;&#160;">
 			<var>$ware.item</var>
 			<text> </text>
 			<text>=</text>
@@ -320,7 +319,7 @@
 			<text> </text>
 			<var>$sub</var>
 		</line>
-		<line linenr="035" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="036" indent="&#160;&#160;&#160;&#160;">
 			<var>$units</var>
 			<text> </text>
 			<text>=</text>
@@ -346,7 +345,7 @@
 			<text> </text>
 			<text>bay</text>
 		</line>
-		<line linenr="036" indent="&#160;&#160;&#160;">
+		<line linenr="037" indent="&#160;&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$units</var>
@@ -355,7 +354,7 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="037" indent="&#160;&#160;">
+		<line linenr="038" indent="&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<text>is</text>
@@ -367,7 +366,7 @@
 			<text>=</text>
 			<var>$ware.item</var>
 		</line>
-		<line linenr="038" indent="&#160;&#160;">
+		<line linenr="039" indent="&#160;&#160;">
 			<var>$upgrade.price</var>
 			<text> </text>
 			<text>=</text>
@@ -394,7 +393,7 @@
 			<text>:</text>
 			<var>$units</var>
 		</line>
-		<line linenr="039" indent="&#160;">
+		<line linenr="040" indent="&#160;">
 			<var>$value</var>
 			<text> </text>
 			<text>=</text>
@@ -405,10 +404,10 @@
 			<text> </text>
 			<var>$upgrade.price</var>
 		</line>
-		<line linenr="040" indent="">
+		<line linenr="041" indent="">
 			<text>else</text>
 		</line>
-		<line linenr="041" indent="">
+		<line linenr="042" indent="">
 			<var>$price</var>
 			<text> </text>
 			<text>=</text>
@@ -425,7 +424,7 @@
 			<text> </text>
 			<var>$ware.item</var>
 		</line>
-		<line linenr="042" indent="">
+		<line linenr="043" indent="">
 			<var>$value</var>
 			<text> </text>
 			<text>=</text>
@@ -442,25 +441,25 @@
 			<var>$price</var>
 			<text>)</text>
 		</line>
-		<line linenr="043" indent="">
-			<text>end</text>
-		</line>
 		<line linenr="044" indent="">
 			<text>end</text>
 		</line>
 		<line linenr="045" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="046" indent="">
 			<text>inc</text>
 			<text> </text>
 			<var>$sub</var>
 		</line>
-		<line linenr="046" indent="">
-			<text>end</text>
-		</line>
 		<line linenr="047" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="048" indent="" />
-		<line linenr="049" indent="">
+		<line linenr="048" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="049" indent="" />
+		<line linenr="050" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$value</var>
@@ -471,11 +470,11 @@
 			<sval type="string" val="plugin.zanzal.getshipvalue" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
-			<sval type="int" val="2" />
+			<sval type="int" val="12" />
 			<sval type="int" val="0" />
 			<sval type="array" size="17">
 				<sval type="string" val="ship" />
-				<sval type="string" val="LUCurrentVersion" />
+				<sval type="string" val="LU.Installed" />
 				<sval type="string" val="ware" />
 				<sval type="string" val="value" />
 				<sval type="string" val="mt.laser" />
@@ -493,13 +492,11 @@
 				<sval type="string" val="price" />
 			</sval>
 			<sval type="array" size="35">
-				<sval type="array" size="6">
-					<sval type="int" val="126" />
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="zanzal.lu.version" />
 					<sval type="int" val="1" />
-					<sval type="int" val="4" />
-					<sval type="int" val="1910" />
-					<sval type="int" val="4" />
-					<sval type="int" val="999" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="707" />
@@ -774,7 +771,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="18">
+			<sval type="array" size="19">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -813,6 +810,10 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="Version info for Litcube's Universe when present" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
